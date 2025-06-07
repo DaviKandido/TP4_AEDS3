@@ -1,0 +1,13 @@
+{
+  "compilerOptions": {
+    "target": "es2020",
+    "module": "commonjs",                 // Sistema de módulos
+    "lib": ["es2020",  "dom"],
+    "module": "commonjs",
+    "esModuleInterop": true,              // Compatibilidade entre CommonJS e ES Modules
+    "forceConsistentCasingInFileNames": true, // Erro se nomes de arquivos divergirem em maiúsculas/minúsculas
+    "strict": true,                       // Ativa todos os checagens estritas
+    "skipLibCheck": true                  // Ignora verificação de tipos em arquivos .d.ts
+  }
+}
+
