@@ -1,0 +1,19 @@
+#cestos {
+    border: 1px solid black;
+}
+
+.title {
+  text-align: center;
+  vertical-align: middle;
+  font-weight: bold;
+}
+
+.cestos table {
+  width: 400px; 
+  border-collapse: collapse;
+}
+
+#cestos table th, 
+#cestos table td {
+  padding: 15px 45px;
+}
