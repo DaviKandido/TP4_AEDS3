@@ -79,6 +79,37 @@ class HashExtensivel{
     }
 }
 
+class Diretorio{
+
+    profGlobal: number;
+    enderecos: Cesto[];
+
+    constructor(profGlobal: number, tamCesto: number) {
+        this.profGlobal = profGlobal;
+        const tamanho = 1 << this.profGlobal;
+        const cestoInicial = new Cesto(tamCesto, profGlobal);
+
+        this.enderecos = Array(tamanho).fill(cestoInicial);
+    }
+
+    dobra(tamCesto: number) {
+        const novoTamanho = 1 << (this.profGlobal + 1);
+        const novaTabela = new Array<Cesto>(novoTamanho);
+
+        for (let i = 0; i < novoTamanho; i++) {
+            novaTabela[i] = this.enderecos[i % this.enderecos.length];
+        }
+
+        this.enderecos = novaTabela;
+        this.profGlobal++;
+    }
+
+    getCestoIndice(hash: number): number {
+        const mask = (1 << this.profGlobal) - 1;
+        return hash & mask;
+    }
+}
+
 class Cesto{
     quantidadeMaxima: number;
     profLocal: number;
@@ -159,36 +190,7 @@ class Cesto{
     }
 }
 
-class Diretorio{
 
-    profGlobal: number;
-    enderecos: Cesto[];
-
-    constructor(profGlobal: number, tamCesto: number) {
-        this.profGlobal = profGlobal;
-        const tamanho = 1 << this.profGlobal;
-        const cestoInicial = new Cesto(tamCesto, profGlobal);
-
-        this.enderecos = Array(tamanho).fill(cestoInicial);
-    }
-
-    dobra(tamCesto: number) {
-        const novoTamanho = 1 << (this.profGlobal + 1);
-        const novaTabela = new Array<Cesto>(novoTamanho);
-
-        for (let i = 0; i < novoTamanho; i++) {
-            novaTabela[i] = this.enderecos[i % this.enderecos.length];
-        }
-
-        this.enderecos = novaTabela;
-        this.profGlobal++;
-    }
-
-    getCestoIndice(hash: number): number {
-        const mask = (1 << this.profGlobal) - 1;
-        return hash & mask;
-    }
-}
 
 
 
