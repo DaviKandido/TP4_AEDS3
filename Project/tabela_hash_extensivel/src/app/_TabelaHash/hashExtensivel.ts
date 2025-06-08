@@ -14,26 +14,26 @@ class HashExtensivel{
     }
 
     hash(elemento: number): number {
-        return elemento;
+        return elemento % (Math.pow(2, this.diretorio.profGlobal));
     }
 
 
     inserir(elemento: number): void {
         const hashValor = this.hash(elemento);
-        let indice = this.diretorio.getCestoIndice(hashValor);
-        let cesto = this.diretorio.enderecos[indice];
+        const indice = this.diretorio.getCestoIndice(hashValor);
+        const cesto = this.diretorio.enderecos[indice];
 
         if (!cesto.insert(elemento)) {
-            this.dividirCesto(indice, hashValor);
+            this.dividirCesto(indice);
             this.inserir(elemento); // tenta de novo
         }
     }
 
-    dividirCesto(indice: number, hashValor: number): void {
+    dividirCesto(indice: number): void {
         const cestoAntigo = this.diretorio.enderecos[indice];
 
         if (cestoAntigo.profLocal === this.diretorio.profGlobal) {
-            this.diretorio.dobra(this.quantidadeDadosPorCesto);
+            this.diretorio.dobra();
         }
 
         const novoProfLocal = cestoAntigo.profLocal + 1;
@@ -92,7 +92,7 @@ class Diretorio{
         this.enderecos = Array(tamanho).fill(cestoInicial);
     }
 
-    dobra(tamCesto: number) {
+    dobra() {
         const novoTamanho = 1 << (this.profGlobal + 1);
         const novaTabela = new Array<Cesto>(novoTamanho);
 
@@ -135,7 +135,7 @@ class Cesto{
     }
 
     // Buscar um elemento no cesto
-    read(elemento:number):any{
+    read(elemento:number){
         if(this.isEmpty())
             return null;
         let i:number = 0;
@@ -191,24 +191,4 @@ class Cesto{
 }
 
 
-
-
-
-
-const hash = new HashExtensivel(2);
-
-
-hash.inserir(5);
-hash.inserir(7);
-hash.inserir(13);
-hash.inserir(1);
-hash.inserir(9);
-hash.inserir(4);
-hash.inserir(2);
-hash.inserir(8);
-hash.remover(8);
-
-console.log(hash.diretorio.profGlobal)
-
-
-hash.imprimir();
+export default HashExtensivel;
