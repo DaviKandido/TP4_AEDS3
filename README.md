@@ -14,7 +14,7 @@
 
 Este projeto é uma aplicação web desenvolvida com HTML, CSS e JavaScript, que simula o funcionamento de uma Tabela Hash Extensível (ou Hashing Extensível) de forma visual e interativa. A aplicação permite ao usuário inserir e remover registros, demonstrando dinamicamente como os dados são distribuídos entre os blocos (buckets) da tabela à medida que o diretório se expande ou se reorganiza. Também é possível definir quantos elementos o cesto comportará. A visualização é voltada para fins educacionais e tem como objetivo auxiliar no entendimento do comportamento interno dessa estrutura de dados, especialmente em relação ao uso de diretórios binários, profundidade global e local, e colisões. O sistema representa visualmente os blocos, seus conteúdos e a lógica de redirecionamento com base nos bits do hash, facilitando a compreensão dos processos de inserção e divisão de blocos.
 
-## Classes criadas 
+## Classes criadas e Metódos Principais
 
 ```
 📁Project
@@ -30,6 +30,27 @@ Este projeto é uma aplicação web desenvolvida com HTML, CSS e JavaScript, que
 			  └── Diretorio.tsx
 	          └── 📁 _TabelaHash
             	  	 └── hashExtensivel.ts
+				└── class HashExtensivel
+				    └── constructor
+				    └── hash
+				    └── inserir
+				    └── dividirCesto
+				    └── buscar
+				    └── remover
+				    └── imprimir
+
+                               └── class Diretorio
+				    └── constructor
+				    └── dobra
+				    └── getCestoIndice
+
+                               └── class Cesto
+                                    └── constructor
+                                    └── insert
+                                    └── contains
+                                    └── delete
+				    └── isFull
+				    └── toString
             	 └── favicon.ico
                  └── globals.css
                  └── layout.tsx
