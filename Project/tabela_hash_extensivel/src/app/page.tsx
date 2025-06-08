@@ -18,6 +18,7 @@ export default function Home() {
 
     useEffect(() => {
         setTabelaHash(new HashExtensivel(3));  // Exemplo de inicialização segura
+        setArray([]);
     }, []);
 
   function inserirChave(event: React.FormEvent) {
