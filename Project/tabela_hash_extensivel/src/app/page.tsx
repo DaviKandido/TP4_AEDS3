@@ -58,6 +58,7 @@ export default function Home() {
      if (!isNaN(chave)) {
       try{
         setTabelaHash(new HashExtensivel(chave));
+        setArray([]);
         setQtdPorCesto(""); // limpa o input
       }catch(error){
         if(error instanceof Error)
