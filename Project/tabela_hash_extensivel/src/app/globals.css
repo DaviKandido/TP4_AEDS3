@@ -97,7 +97,7 @@ button:hover {
 
 .legenda{
     margin: 0 auto; 
-    margin-top: 10%;
+    margin-top: 1%;
     text-align: start;
     border: 1px solid #333;
     width: 20%;
@@ -110,4 +110,10 @@ button:hover {
       text-align: center;
       width: 20%;
     }
+}
+
+.info{
+  margin-top: 9%;
+  font-weight: bold;
+  font-size: 1.3rem;
 }

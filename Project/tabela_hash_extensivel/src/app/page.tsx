@@ -105,6 +105,7 @@ export default function Home() {
           </div>
         </form>
 
+
         <div className="table">
           <Diretorio 
             hash={tabelaHash}
@@ -113,15 +114,22 @@ export default function Home() {
           <Cesto hash={tabelaHash}/>
         </div>
 
-        <div className="legenda animate__animated animate__backInUp">
-          <p>Legenda:</p>
-          <ul> 
-            <li>P = Profundidade Global</li>
-            <li> P&apos; = Profundidade Local</li>
-            <li> N = Quantidade de Elementos</li>
-            <li> k = Chaves Inseridas</li>
-          </ul>
-        </div>
+
+          <div className="info animate__animated animate__backInUp">
+              {"hash(k) = k % 2"}
+              <sup>{ " "+ tabelaHash.diretorio.profGlobal}</sup>
+          </div>
+
+          <div className="legenda animate__animated animate__backInUp">
+            <p>Legenda:</p>
+            <ul> 
+              <li>P = Profundidade Global</li>
+              <li> P&apos; = Profundidade Local</li>
+              <li> N = Quantidade de Elementos</li>
+              <li> k = Chaves Inseridas</li>
+            </ul>
+          </div>
+
       </main>
       <footer>
       

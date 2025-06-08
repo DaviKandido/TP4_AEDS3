@@ -7,12 +7,14 @@ import 'animate.css';
 export default function Cesto({hash}: {hash: HashExtensivel}) {
   return (
     <div className={styles.cestos}>
+
       <table className="animate__animated animate__bounceInUp">
         <thead>
           <tr>
             <th className="title" colSpan={6}>Cestos</th>
           </tr>
           <tr>
+            <th>End.</th>
             <th>P&apos;</th>
             <th>N</th>
               {Array.from({ length: hash.quantidadeDadosPorCesto }).map((_, i) => (
@@ -22,8 +24,9 @@ export default function Cesto({hash}: {hash: HashExtensivel}) {
         </thead>
             <tbody>
                 {
-                  hash.diretorio.enderecos.map((cestos, index) => (
+                  hash.cestos.map((cestos, index) => (
                     <tr key={index}>
+                      <td>{index}</td>
                       <td>{cestos.profLocal}</td>
                       <td>{cestos.elementos.length}</td>
                       {cestos.elementos.map((elemento, index) => (
