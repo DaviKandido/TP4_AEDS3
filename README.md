@@ -16,6 +16,7 @@ Este projeto é uma aplicação web desenvolvida com HTML, CSS e JavaScript, que
 
 ## Classes criadas 
 
+```
 📁Project
    └── 📁tabela_hash_extensivel
    	└── 📁 src
@@ -33,6 +34,7 @@ Este projeto é uma aplicação web desenvolvida com HTML, CSS e JavaScript, que
                  └── globals.css
                  └── layout.tsx
                  └── page.tsx
+```
 
 ## Relato de experiências:
 
