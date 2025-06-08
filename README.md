@@ -105,8 +105,7 @@ sim
 ### 🚀 Como Executar
 
 1. Clone o repositório.
-2. Acesse a raiz do projeto, pasta '📁Project
-  					 └── 📁tabela_hash_extensivel'
+2. Acesse a raiz do projeto, pasta '📁Project -> 📁tabela_hash_extensivel'
 3. Instale as dependências com o Node. (Execute: npm intall)
 4. Execute o servidor localmente (Execute: npm run dev)
 5. Seu projeto estara disponivel em: http://localhost:3000/ 
