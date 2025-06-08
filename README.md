@@ -57,6 +57,7 @@ Este projeto é uma aplicação web desenvolvida com HTML, CSS, JavaScript, Type
                  └── page.tsx
 ```
 
+
 ## 🗎 Relato de experiências:
 
 ```
@@ -97,6 +98,9 @@ sim
 
 - Para visualizar acesse o link: https://tp-4-aeds-3.vercel.app/
 - Ou utilize o QR Code abaixo:
+  
+![image](https://github.com/user-attachments/assets/7555055c-5bf2-4011-8f74-6ae252805c23)
+
 
 ### 🚀 Como Executar
 
@@ -105,11 +109,6 @@ sim
 3. Execute o servidor localmente (Na raiz do projeto, pasta 'tabela_hash_extensivel', execute: npm run dev)
 4. Seu projeto estara disponivel em: http://localhost:3000/ 
   
-![image](https://github.com/user-attachments/assets/7555055c-5bf2-4011-8f74-6ae252805c23)
-
-
-
-
 
 ## 📄 Licença
 Este projeto está licenciado sob a **MIT License** - veja o arquivo [LICENSE](LICENSE) para mais detalhes.
