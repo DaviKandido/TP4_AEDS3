@@ -52,9 +52,15 @@ export default function Home() {
     function DefinineQtdPorCestos(event: React.FormEvent) {
     event.preventDefault();
     const chave = parseInt(qtdPorCesto);
-    if (!isNaN(chave)) {
-      setTabelaHash(new HashExtensivel(chave));
-      setQtdPorCesto(""); // limpa o input
+     if (!isNaN(chave)) {
+      try{
+        setTabelaHash(new HashExtensivel(chave));
+        setQtdPorCesto(""); // limpa o input
+      }catch(error){
+        if(error instanceof Error)
+            alert(error.message);
+            setQtdPorCesto(""); // limpa o input
+      }
     }else{
       alert("Insira um numero válida");
     }

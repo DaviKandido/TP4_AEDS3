@@ -8,8 +8,8 @@ export default function Diretorio({hash}: {hash: HashExtensivel}) {
     <div className={styles.diretorio}>
       <table className="animate__animated animate__bounceInUp">
         <thead>
-              <tr>
-            <th className="title" colSpan={6}>Diretorio</th>
+          <tr>
+            <th className="title" colSpan={10}>Diretorio</th>
           </tr>
           <tr>
             <th>P = {hash.diretorio.profGlobal}</th>
