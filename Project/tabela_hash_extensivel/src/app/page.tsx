@@ -36,6 +36,7 @@ export default function Home() {
       setChaveInserir(""); // limpa o input
     }else{
       alert("Insira um numero válida");
+      setChaveInserir("")
     }
   }
 
@@ -47,6 +48,7 @@ export default function Home() {
       setChaveRemover(""); // limpa o input
     }else{
       alert("Insira um numero válida");
+      setChaveRemover("")
     }
   }
 
