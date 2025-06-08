@@ -13,7 +13,7 @@ export default function Diretorio({hash}: {hash: HashExtensivel}) {
           </tr>
           <tr>
             <th>P = {hash.diretorio.profGlobal}</th>
-            <th>Cesto End.</th>
+            <th> End. Cesto</th>
           </tr>
         </thead>
         <tbody>
