@@ -64,10 +64,10 @@ Todos os requisitos foram implementados ?
  - Sim
 
 Houve alguma operação mais difícil? 
- - Sim, o cálculo da lista invertida 
+ - – Sim. A principal dificuldade foi entender como funcionavam as operações implementadas na versão Java e adaptá-las para que se encaixassem corretamente na estrutura do nosso projeto em JavaScript. Isso exigiu bastante atenção para manter a lógica da tabela hash extensível e garantir que a adaptação fosse fiel ao funcionamento original.
 
 Vocês enfrentaram algum desafio na implementação? 
- - Sim, a utilização da lista invertida em si foi um grande desafio. Como por exemplo, adaptar totalmente o que haviamos feito para a lista invertida. 
+ - Sim, um dos principais desafios foi adaptar a lógica da tabela hash extensível ao contexto da aplicação web. 
 
 Os resultados foram alcançados? 
  - Sim
