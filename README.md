@@ -91,8 +91,9 @@ sim
 ```
 
 ### Link e QR Code para Visualização
-https://tp-4-aeds-3.vercel.app/
 
+- Para visualizar acesse o link: https://tp-4-aeds-3.vercel.app/
+- Ou utilize o QR Code abaixo:
 ![image](https://github.com/user-attachments/assets/7555055c-5bf2-4011-8f74-6ae252805c23)
 
 
