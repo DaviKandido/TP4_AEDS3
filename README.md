@@ -112,7 +112,10 @@ sim
 
 ### 📹 Video demonstrativo
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/fkqjA_x9CoE?si=GA_BxH3YsBLvPMRC" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+- Disponivel em: https://www.youtube.com/watch?v=fkqjA_x9CoE
+
+[![Vídeo demonstrativo no YouTube](https://img.youtube.com/vi/fkqjA_x9CoE/0.jpg)](https://www.youtube.com/watch?v=fkqjA_x9CoE)
+
   
 
 ## 📄 Licença
