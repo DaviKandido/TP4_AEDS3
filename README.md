@@ -108,7 +108,11 @@ sim
 2. Acesse a raiz do projeto, pasta '📁Project -> 📁tabela_hash_extensivel'
 3. Instale as dependências com o Node. (Execute: npm intall)
 4. Execute o servidor localmente (Execute: npm run dev)
-5. Seu projeto estara disponivel em: http://localhost:3000/ 
+5. Seu projeto estara disponivel em: http://localhost:3000/
+
+### 📹 Video demonstrativo
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/fkqjA_x9CoE?si=GA_BxH3YsBLvPMRC" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
   
 
 ## 📄 Licença
